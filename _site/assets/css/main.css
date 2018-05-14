@@ -1550,6 +1550,19 @@
 
 /* Basic */
 
+	/* Color scheme */
+	:root{
+		/*--main-color: #4acaa8;
+		--light-color: #d1f1e9;
+		--footer-icon-color: #b6e9dc;
+		--divider-color: #5ccfb0;*/
+
+		--main-color: #09497a;
+		--light-color: #ddd;
+		--footer-icon-color: #999;
+		--divider-color: #09558e;
+	};
+
 	body {
 		background: #fff;
 	}
@@ -1574,7 +1587,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #4acaa8 !important;
+			color: var(--main-color) !important;
 		}
 
 	strong, b {
@@ -1726,7 +1739,7 @@
 	}
 
 	header.major h2 {
-		color: #4acaa8;
+		color: var(--main-color);
 		font-size: 3.5em;
 	}
 
@@ -1789,7 +1802,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #4acaa8;
+			border-color: var(--main-color);
 		}
 
 	.select-wrapper {
@@ -1899,7 +1912,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #4acaa8;
+			border-color: var(--main-color);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2092,7 +2105,7 @@
 				}
 
 				ul.feature-icons li:before {
-					background: #4acaa8;
+					background: var(--main-color);
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -2379,7 +2392,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #4acaa8;
+			background-color: var(--main-color);
 			color: #ffffff !important;
 		}
 
@@ -2388,6 +2401,7 @@
 			input[type="button"].special:hover,
 			.button.special:hover {
 				background-color: #5ed0b1;
+				/*background-color: #aaaa;*/
 			}
 
 			input[type="submit"].special:active,
@@ -2395,6 +2409,7 @@
 			input[type="button"].special:active,
 			.button.special:active {
 				background-color: #39c29d;
+				/*background-color: #aaaa;*/
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2461,9 +2476,8 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #4acaa8;
-		/*background: #8f0003;*/
-		color: #d1f1e9;
+		background: var(--main-color);
+		color: var(--light-color);
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2482,11 +2496,11 @@
 			}
 
 		#header header p {
-			color: #b6e9dc;
+			color: var(--footer-icon-color);
 		}
 
 		#header a {
-			color: #d1f1e9;
+			color: var(--light-color);
 		}
 
 			#header a:hover {
@@ -2513,7 +2527,7 @@
 			}
 
 			#header > header p {
-				color: #d1f1e9;
+				color: var(--light-color);
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2534,7 +2548,7 @@
 			}
 
 				#header > footer .icons li a {
-					color: #b6e9dc;
+					color: var(--footer-icon-color);
 				}
 
 		#header > nav {
@@ -2551,7 +2565,8 @@
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #5ccfb0;
+					/*border-top: solid 2px #5ccfb0;*/
+					border-top: solid 2px var(--divider-color);
 					display: block;
 					padding: 0;
 				}
@@ -2570,7 +2585,7 @@
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #4acaa8 !important;
+							color: var(--main-color) !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2849,7 +2864,7 @@
 					}
 
 					#titleBar .toggle:before {
-						background: #4acaa8;
+						background: var(--main-color);
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
