@@ -2450,6 +2450,7 @@
 			.features article .image img {
 				display: block;
 				width: 100%;
+				margin: auto;
 			}
 
 		.features article .inner {
